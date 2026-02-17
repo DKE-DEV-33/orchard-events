@@ -1,0 +1,16 @@
+name: OrchardEvents
+version: ${version}
+main: com.promethean.orchardevents.OrchardEventsPlugin
+api-version: "1.21"
+authors: [Promethean Web Services]
+description: Timed server events with rewards and leaderboards.
+
+commands:
+  event:
+    description: Start or stop an Orchard event
+    usage: /event <start|stop> [seconds]
+    permission: orchardevents.admin
+
+permissions:
+  orchardevents.admin:
+    default: op
